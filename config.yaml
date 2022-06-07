@@ -1,0 +1,38 @@
+---
+########################################################
+##
+## Arquivo yaml com as configurações específicas de cada
+## servidor provisionado no Vagrant
+##
+########################################################
+DOMAIN: "local"
+RAM: &machine_ram "2048"
+CPU: &machine_cpu "2"
+
+# Custom boxes
+boxes:
+  ubuntu-2004: &ubuntu-2004 "ubuntu/focal64"
+
+# Configured hosts
+hosts:
+  - name: master-1
+    box: *ubuntu-2004
+    ram: *machine_ram
+    cpu: *machine_cpu
+    rede:
+      - 192.168.56.11
+    script: "./scripts/master.sh"
+  - name: worker-1
+    box: *ubuntu-2004
+    ram: *machine_ram
+    cpu: *machine_cpu
+    rede:
+      - 192.168.56.21
+    script: "./scripts/worker.sh"
+  - name: worker-2
+    box: *ubuntu-2004
+    ram: *machine_ram
+    cpu: *machine_cpu
+    rede:
+      - 192.168.56.22
+    script: "./scripts/worker.sh"
