@@ -11,7 +11,7 @@ Este projeto cria um ambiente de laboratorio do [k3s](https://k3s.io) com um Mas
 > Caso deseje alterar a quantidade de CPU/Memoria de cada maquina altere o arquivo config.yaml
 
 ## Requisitos
-[Instale o Vagrant](https://www.vagrantup.com/docs/installation) na sua estacao de trabalho.
+[Instale o Vagrant (>= 2.2.19)](https://www.vagrantup.com/docs/installation) e o [VirtualBox (>= 6.1)](https://www.virtualbox.org) na sua estacao de trabalho.  
 ## Utilizacao
 Para inicializar o ambiente, digite os comandos a seguir:
 ```shell
