@@ -33,6 +33,13 @@ vagrant ssh -c 'sudo k3s kubectl get nodes' master-1
 >worker-2   Ready    <none>                 14s     v1.23.6+k3s1
 >```
 
+A partir deste ponto voce pode estabelecer uma conexao ssh com qualquer uma das 3 maquinas criadas com o comando `vagrant ssh <nome_da_maquina>`. Exemplo:
+
+```shell
+vagrant ssh master-1
+```
+
+> Voce sera conectado com o usuario vagrant e pode virar root com o comando `sudo su`.
 ## Comandos basicos  do vagrant
 > Atenção: Os comandos devem ser executados no diretorio que contem o Vagrantfile.
 
