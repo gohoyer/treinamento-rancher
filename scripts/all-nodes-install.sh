@@ -1,8 +1,11 @@
 #! /bin/bash
 # Install CRI - Docker
-
+export DEBIAN_FRONTEND=noninteractive
+echo "#################################"
+echo "## CONFIGURANDO PRE REQUISITOS ##"
+echo "#################################"
 # Limpando versoes antigas
-apt-get remove docker docker-engine docker.io containerd runc
+apt-get remove containerd runc
 # Instalando prereqs
 apt-get update
 apt-get -y install \
