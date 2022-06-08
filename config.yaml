@@ -6,7 +6,7 @@
 ##
 ########################################################
 DOMAIN: "local"
-RAM: &machine_ram "2048"
+RAM: &machine_ram "1024"
 CPU: &machine_cpu "2"
 
 # Custom boxes
