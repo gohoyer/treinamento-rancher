@@ -30,9 +30,9 @@ k3s kubectl get nodes
 >Resultado esperado:
 >```shell
 >NAME               STATUS   ROLES                  AGE     VERSION
->vagrant-worker-1   Ready    <none>                 5m19s   v1.23.6+k3s1
->vagrant-master-1   Ready    control-plane,master   9m48s   v1.23.6+k3s1
->vagrant-worker-2   Ready    <none>                 14s     v1.23.6+k3s1
+>worker-1   Ready    <none>                 5m19s   v1.23.6+k3s1
+>master-1   Ready    control-plane,master   9m48s   v1.23.6+k3s1
+>worker-2   Ready    <none>                 14s     v1.23.6+k3s1
 >```
 
 ## Comandos basicos  do vagrant
