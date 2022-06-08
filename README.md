@@ -22,9 +22,7 @@ vagrant up
 
 Apos o Vagrant terminar de inicializar e configurar as maquinas, verifique a saude do cluster.
 ```shell
-vagrant ssh master-1
-sudo su
-k3s kubectl get nodes
+vagrant ssh -c 'sudo k3s kubectl get nodes' master-1
 ```
 
 >Resultado esperado:
